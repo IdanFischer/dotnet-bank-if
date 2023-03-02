@@ -1,3 +1,11 @@
-// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
 
+BankAccount newaccount = new CheckingAccount("jimbo", 250);
+// newaccount.customerName = "jim";
+
+
+
+Console.WriteLine(newaccount.customerName + "'s starting balance is $" + newaccount.getBalance());
+// he added 100 more
+newaccount.depoist(-100);
+
+Console.WriteLine(newaccount.customerName + "'s starting balance is $" + newaccount.getBalance());
